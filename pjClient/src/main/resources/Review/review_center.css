@@ -1,0 +1,67 @@
+/* Định dạng StackPane (container của thẻ flashcard) */
+#cardPane {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 2, 2);
+    -fx-padding: 10;
+    -fx-perspective: 800;
+    -fx-alignment: center;
+}
+
+/* Định dạng mặt trước (frontLabel) */
+#frontLabel {
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-background-color: #e6f3ff;
+    -fx-background-radius: 8;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+    -fx-pref-width: 400;
+    -fx-pref-height: 350;
+}
+
+/* Định dạng mặt sau (backLabel) */
+#backLabel {
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-background-color: #ffe6e6;
+    -fx-background-radius: 8;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+    -fx-pref-width: 400;
+    -fx-pref-height: 350;
+}
+
+/* Định dạng HBox chứa backLabel và speakButton */
+#backPane {
+    -fx-alignment: center;
+    -fx-spacing: 10;
+}
+
+/* Định dạng nút Xem */
+#xem {
+    -fx-background-color: #0288d1;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-padding: 8 16;
+    -fx-cursor: hand;
+}
+
+#xem:hover {
+    -fx-background-color: #0277bd;
+}
+
+/* Định dạng nút Nghe */
+#speakButton {
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-padding: 5;
+}
+
+#speakButton:hover {
+    -fx-background-color: #f0f0f0;
+    -fx-background-radius: 5;
+}

@@ -1,0 +1,68 @@
+/* chatBottom.css */
+.hbox {
+    -fx-background-color: linear-gradient(to right, #E0F7FA, #FFFFFF);
+    -fx-border-color: #DDD;
+    -fx-padding: 10px 10px 10px 15%;
+}
+
+.button {
+    -fx-background-color: transition;
+    -fx-background-radius: 50%;
+    -fx-padding: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0, 0, 2);
+    -fx-cursor: hand;
+    -fx-transition: all 0.3s ease;
+}
+
+.button:hover {
+    -fx-background-color: transition;
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+.button:pressed {
+    -fx-background-color: #E0E0E0;
+}
+
+#imageButton .image-view {
+  -fx-effect: dropshadow(gaussian, #2196F3, 5, 0, 0, 2);
+}
+
+#fileButton .image-view {
+    -fx-effect: dropshadow(gaussian, #2196F3, 5, 0, 0, 2);
+}
+
+#encryptedFileButton .image-view {
+   -fx-effect: dropshadow(gaussian, #2196F3, 5, 0, 0, 2);
+}
+
+#recordButton .image-view {
+    -fx-effect: dropshadow(gaussian, #2196F3, 5, 0, 0, 2);
+}
+
+#iconButton .image-view {
+    -fx-effect: dropshadow(gaussian, #2196F3, 5, 0, 0, 2);
+}
+
+#sendButton .image-view {
+    -fx-effect: dropshadow(gaussian, #2196F3, 5, 0, 0, 2);
+}
+
+.text-area {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 20px;
+    -fx-border-color: #B0BEC5;
+    -fx-border-radius: 25px;
+    -fx-padding: 5px 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0, 0, 2);
+}
+
+.text-area .content {
+    -fx-background-color: #F5F5F5;
+    -fx-background-radius: 20px;
+}
+
+.text-area:focused {
+    -fx-border-color: #2196F3;
+    -fx-border-width: 2px;
+}

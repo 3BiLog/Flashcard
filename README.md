@@ -1,1 +1,1 @@
-# Flashcard
+# Flashcard app for language learning

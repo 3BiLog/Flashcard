@@ -1,0 +1,225 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>projectClient</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <name>projectClient</name>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <junit.version>5.10.2</junit.version>
+        <java.version>17</java.version>
+        <javafx.version>17.0.6</javafx.version>
+    </properties>
+
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
+
+
+
+    <dependencies>
+        <!-- JavaFX -->
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-controls</artifactId>
+            <version>${javafx.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-fxml</artifactId>
+            <version>${javafx.version}</version>
+        </dependency>
+
+        <!-- UI Enhancements -->
+        <dependency>
+            <groupId>org.controlsfx</groupId>
+            <artifactId>controlsfx</artifactId>
+            <version>11.2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.kordamp.bootstrapfx</groupId>
+            <artifactId>bootstrapfx-core</artifactId>
+            <version>0.4.0</version>
+        </dependency>
+
+        <!-- JUnit 5 -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- Testing -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- Xử lý âm thanh/TTS-->
+        <dependency>
+            <groupId>com.sun.speech</groupId>
+            <artifactId>freetts</artifactId>
+            <version>1.2.2</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/freetts.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sun.speech</groupId>
+            <artifactId>cmu_us_kal</artifactId>
+            <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/cmu_us_kal.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sun.speech</groupId>
+            <artifactId>cmulex</artifactId>
+            <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/cmulex.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sun.speech</groupId>
+            <artifactId>en_us</artifactId>
+            <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/en_us.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sun.speech</groupId>
+            <artifactId>freetts-jsapi10</artifactId>
+            <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/freetts-jsapi10.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sun.speech</groupId>
+            <artifactId>cmudict04</artifactId>
+            <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/cmudict04.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sun.speech</groupId>
+            <artifactId>cmutimelex</artifactId>
+            <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/cmutimelex.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sun.speech</groupId>
+            <artifactId>mbrola</artifactId>
+            <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/mbrola.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sun.speech</groupId>
+            <artifactId>jsapi</artifactId>
+            <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/jsapi.jar</systemPath>
+        </dependency>
+        <!-- Gửi email-->
+        <dependency>
+            <groupId>com.sun.mail</groupId>
+            <artifactId>javax.mail</artifactId>
+            <version>1.6.2</version>
+        </dependency>
+
+        <!-- Xử lý JSON-->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.10.1</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-swing</artifactId>
+            <version>${javafx.version}</version>
+        </dependency>
+
+        <!-- JavaFX media -->
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-media</artifactId>
+            <version>${javafx.version}</version>
+        </dependency>
+        <!--  Xử lý hình ảnh/computer vision-->
+        <dependency>
+            <groupId>org.bytedeco</groupId>
+            <artifactId>javacv-platform</artifactId>
+            <version>1.5.8</version> <!-- Sử dụng phiên bản mới nhất -->
+        </dependency>
+        <!-- Nhận dạng giọng nói-->
+        <dependency>
+            <groupId>com.alphacephei</groupId>
+            <artifactId>vosk</artifactId>
+            <version>0.3.45</version>
+        </dependency>
+        <dependency>
+            <groupId>net.java.dev.jna</groupId>
+            <artifactId>jna</artifactId>
+            <version>5.14.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20220924</version>
+        </dependency>
+
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- Compiler plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.13.0</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+
+            <!-- JavaFX Maven Plugin -->
+            <plugin>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-maven-plugin</artifactId>
+                <version>0.0.8</version>
+                <executions>
+                    <execution>
+                        <id>default-cli</id>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <mainClass>org.example.projectclient.HelloApplication</mainClass>
+                    <launcher>app</launcher>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

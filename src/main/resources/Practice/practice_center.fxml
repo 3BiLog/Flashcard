@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="20" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Practice.practice_centerController">
+    <stylesheets>
+        <URL value="@practice_center.css" />
+    </stylesheets>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <children>
+        <Label fx:id="questionLabel" maxHeight="120.0" text="Question" textAlignment="CENTER">
+            <font>
+                <Font size="24.0" />
+            </font>
+            <VBox.margin>
+                <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+            </VBox.margin>
+         <graphic>
+            <Button fx:id="speakerButton" maxHeight="20.0" maxWidth="80.0" mnemonicParsing="false" onAction="#handleSpeak" prefHeight="50.0" prefWidth="80.0">
+                <graphic>
+                    <ImageView fx:id="speakerIcon" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@/speaker.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+               <padding>
+                  <Insets right="20.0" />
+               </padding>
+            </Button>
+         </graphic>
+        </Label>
+        <HBox alignment="CENTER" spacing="20">
+            <children>
+                <Button fx:id="answer1" mnemonicParsing="false" onAction="#checkAnswer" prefWidth="83.0" text="Answer 1" textAlignment="CENTER" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </HBox.margin></Button>
+                <Button fx:id="answer2" mnemonicParsing="false" onAction="#checkAnswer" prefWidth="82.0" text="Answer 2" textAlignment="CENTER" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </HBox.margin></Button>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" spacing="20">
+            <children>
+                <Button fx:id="answer3" mnemonicParsing="false" onAction="#checkAnswer" prefWidth="94.0" text="Answer 3" textAlignment="CENTER" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </HBox.margin></Button>
+                <Button fx:id="answer4" mnemonicParsing="false" onAction="#checkAnswer" text="Answer 4" textAlignment="CENTER" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </HBox.margin></Button>
+            </children>
+        </HBox>
+    </children>
+</VBox>

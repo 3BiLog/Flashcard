@@ -1,0 +1,63 @@
+/* left side: trắng, căn giữa */
+.left-pane {
+    -fx-background-color: transparent;
+    -fx-padding: 40;
+    -fx-spacing: 20;
+    -fx-alignment: center;
+}
+
+.Vb1label1{
+     -fx-border-color: transparent transparent black transparent;
+     -fx-border-width: 0 0 1 0;
+}
+
+/* right side: nền trong suốt vì đã có tam giác đen */
+.right-pane {
+    -fx-background-color: transparent;
+    -fx-padding: 100 30 40 40;
+    -fx-spacing: 20;
+}
+
+/* text fields */
+.text-field, .password-field {
+    -fx-background-color: rgba(245, 245, 245, 0.9);
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1;
+    -fx-padding: 10 14;
+    -fx-font-size: 14px;
+    -fx-prompt-text-fill: derive(-fx-control-inner-background, -40%);
+    -fx-transition: all 0.2s ease;
+}
+
+.text-field:focused, .password-field:focused {
+    -fx-border-color: #0073e6;
+    -fx-effect: dropshadow(gaussian, rgba(0, 115, 230, 0.4), 8, 0, 0, 0);
+}
+
+/* login button */
+.button {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-background-radius: 20;
+    -fx-cursor: hand;
+    -fx-padding: 10 20;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(from 30% 0% to 100% 0%, black, red);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0.3, 0, 2);
+    -fx-opacity: 1;
+}
+
+
+/* hyperlink */
+.hyperlink {
+    -fx-text-fill: #0073e6;
+    -fx-cursor: hand;
+}
+.hyperlink:hover {
+    -fx-text-fill: #005bb5;
+}
+
